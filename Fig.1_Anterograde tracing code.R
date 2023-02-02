@@ -2,8 +2,8 @@
 install.packages('heatmaply')
 library(heatmaply)
 # Load data 
-Antero <- read.csv("..path to your folder here\\Figure1-Source Data.csv",sep=",")
-row.names(Antero)<- Antero$X
+Antero <- read.csv("..path to your folder here\\Figure 1 -Source data.csv",sep=",")
+row.names(Antero)<- Antero$Nucleus
 Antero<-Antero[1:118,1:6]
 Antero<-Antero[order(Antero$Mouse.1),]
 Antero_matrix<-data.matrix(Antero)
